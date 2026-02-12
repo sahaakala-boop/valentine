@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sweetie Geethma ❤️</title>
+
+<style>
+body {
+    text-align: center;
+    font-family: Arial;
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    overflow-x: hidden;
+}
+
+h1 {
+    color: white;
+    margin-top: 40px;
+}
+
+.gallery img {
+    width: 250px;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    margin: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#yesBtn {
+    background-color: #ff3366;
+    color: white;
+}
+
+#noBtn {
+    position: absolute;
+    background-color: gray;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Sweetie Geethma, Will You Be My Valentine? ❤️</h1>
+
+<!-- Photo Gallery -->
+<div class="gallery">
+    <img src="photo1.jpg">
+    <img src="photo2.jpg">
+    <img src="photo3.jpg">
+</div>
+
+<button id="yesBtn" onclick="yesClicked()">YES ❤️</button>
+<button id="noBtn" onmouseover="moveButton()">NO 😢</button>
+
+<!-- Bruno Mars Music -->
+<audio autoplay loop>
+    <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<script>
+function yesClicked() {
+    alert("I Love You Sweetie Geethma ❤️🥰");
+}
+
+function moveButton() {
+    let button = document.getElementById("noBtn");
+
+    let x = Math.random() * window.innerWidth;
+    let y = Math.random() * window.innerHeight;
+
+    button.style.left = x + "px";
+    button.style.top = y + "px";
+}
+</script>
+
+</body>
+</html>
